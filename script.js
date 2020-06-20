@@ -6,20 +6,20 @@ let currentHour = moment().format("HH");
 
 console.log(currentHour)
 
-// let nine = $("#9");
-// let ten = $("#10");
-// let eleven = $("#11");
-// let twelve = $("#12");
-// let thirteen = $("#13");
-// let fourteen = $("#14");
-// let fifteen = $("#15");
-// let sixteen = $("#16");
-// let seventeen = $("#17");
+let nine = $("#9");
+let ten = $("#10");
+let eleven = $("#11");
+let twelve = $("#12");
+let thirteen = $("#13");
+let fourteen = $("#14");
+let fifteen = $("#15");
+let sixteen = $("#16");
+let seventeen = $("#17");
+
+let plannerHour = nine;
 
 
 
-// function timeComparison () {
-//     if (currentHour > plannerHour) {
-//         console.log("future")
-//     }
-// }
+function timeComparison (currentHour, plannerHour) {
+    
+    }
