@@ -3,3 +3,5 @@ To create a single-day planner that saves text inputs and color codes by the hou
 
 https://github.com/jfisher396/Day-Planner/blob/master/images/Screenshot%20(48).png
 
+https://github.com/jfisher396/Day-Planner/blob/master/images/Screenshot%20(49).png
+
