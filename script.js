@@ -5,9 +5,7 @@ $(document).ready(function () {
     let displayDate = document.getElementById('currentDay');
     displayDate.innerHTML = NowMoment;
     let currentHour = moment().format("HH");
-
-    console.log(currentHour);
-
+    //variables 
     let nine = $("#9").text();
     let ten = $("#10").text();
     let eleven = $("#11").text();
@@ -17,8 +15,7 @@ $(document).ready(function () {
     let fifteen = $("#15").text();
     let sixteen = $("#16").text();
     let seventeen = $("#17").text();
-    console.log(fourteen);
-
+    //variables to compare times from scheduler with actual time
     let intFromNine = parseInt(nine);
     let intFromTen = parseInt(ten);
     let intFromEleven = parseInt(eleven);
@@ -28,11 +25,14 @@ $(document).ready(function () {
     let intFromFifteen = parseInt(fifteen) + 12;
     let intFromSixteen = parseInt(sixteen) + 12;
     let intFromSeventeen = parseInt(seventeen) + 12;
-    console.log(intFromSeventeen)
 
-    console.log("Here's the int that was in #9 : ", intFromNine);
-
-
+    // Button funcition to clear local storage and clear contents
+    $("#clearFieldsBtn").click(function (event) {
+        event.preventDefault;
+        $(textarea).empty();
+        localStorage.clear();
+        
+    })
 
     $(".time-div").each(function () {
         var timeDiv = $(this).attr("id").split("-")[1];
@@ -49,7 +49,6 @@ $(document).ready(function () {
             $(this).removeClass("future");
             $(this).addClass("past");
         }
-
     })
 
 

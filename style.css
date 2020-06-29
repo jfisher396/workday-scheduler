@@ -15,10 +15,27 @@ textarea{
 
 .jumbotron {
   text-align: center;
-  background-color: transparent;
-  color: black;
+  /* background-color: ; */
+  color: whitesmoke;
   border-radius: 0;
   border-bottom: 10px solid black;
+}
+
+.jumbotron-pattern {
+  background-color: #026873;
+  background-image: linear-gradient(90deg, rgba(255, 255, 255, .07) 50%, transparent 50%),
+  linear-gradient(90deg, rgba(255, 255, 255, .13) 50%, transparent 50%),
+  linear-gradient(90deg, transparent 50%, rgba(255, 255, 255, .17) 50%),
+  linear-gradient(90deg, transparent 50%, rgba(255, 255, 255, .19) 50%);
+  background-size: 13px,
+  29px,
+  37px,
+  53px;
+}
+
+#clearFieldsBtn {
+
+  color: whitesmoke;
 }
 
 .description{
@@ -27,7 +44,6 @@ textarea{
 
 .time-block{
   text-align: center;
-  border-radius: 15px;
 }
 
 .row {
@@ -44,16 +60,19 @@ textarea{
 
 .past {
   background-color: #d3d3d3;
+  border-radius: 15px;
   color: white;
 }
 
 .present {
   background-color: #ff6961;
+  border-radius: 15px;
   color: white;
 }
 
 .future {
   background-color: #77dd77;
+  border-radius: 15px;
   color: white;
 }
 
@@ -66,6 +85,6 @@ textarea{
 }
 
 .saveBtn i:hover {
-  font-size: 20px;
-  transition: all .3s ease-in-out;
+  font-size: 30px;
+  transition: all .2s ease-in-out;
 }
