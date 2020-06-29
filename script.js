@@ -29,7 +29,7 @@ $(document).ready(function () {
     // Button funcition to clear local storage and clear contents
     $("#clearFieldsBtn").click(function (event) {
         event.preventDefault;
-        $(textarea).empty();
+        $("textarea").val("");
         localStorage.clear();
         
     })
