@@ -4,30 +4,34 @@ body {
   line-height: 1;
 }
 
+.container {
+  max-width: 1024px;
+}
+
 textarea {
   background: transparent;
   border: none;
   resize: none;
-  color: #000000;
-  border-left: 1px solid black;
+  color: rgb(82, 82, 82);
+  border-left: 1px solid rgb(82, 82, 82);
   padding: 10px;
 }
 
+
+
 .jumbotron {
+  max-height: 350px;
   text-align: center;
   color: white;
   border-radius: 0;
-  border-bottom: 10px solid black;
+  border-bottom: 10px solid rgb(82, 82, 82);
 }
 
 .jumbotron-pattern {
   background-color: #a29bfe;
   
 }
-/* #currentDay {
 
-  tex
-} */
 #clearFieldsBtn {
   margin-top: 30px;
 }
@@ -48,8 +52,11 @@ textarea {
 
 .hour {
   background-color: #ffffff;
-  color: #000000;
-  border-top: 1px dashed #000000;
+  color:rgb(82, 82, 82);
+  padding-top: 30px;
+  font-size: 25px;
+  font-weight: 500;
+  border-top: 1px solid rgb(82, 82, 82);
 }
 
 .past {
@@ -71,7 +78,7 @@ textarea {
 }
 
 .saveBtn {
-  border-left: 1px solid black;
+  border-left: 1px solid rgb(82, 82, 82);
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   background-color:#0984e3;
@@ -81,4 +88,9 @@ textarea {
 .saveBtn i:hover {
   font-size: 30px;
   transition: all 0.2s ease-in-out;
+}
+
+.time-div:last-child {
+  margin-bottom: 50px;
+  border-bottom: 1px solid #333;
 }
