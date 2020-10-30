@@ -3,7 +3,9 @@ $(document).ready(function () {
   let NowMoment = moment().format("MMMM Do YYYY");
   let displayDate = document.getElementById("currentDay");
   displayDate.innerHTML = NowMoment;
-  let currentHour = moment().format("HH");
+  let currentHour = 10;
+
+//   moment().format("HH")
 
   // Button function to clear local storage and clear contents
   $("#clearFieldsBtn").click(function (event) {
@@ -18,6 +20,7 @@ $(document).ready(function () {
     
     if (currentHour == timeDiv) {
       $(this).addClass("present");
+      $(this).children(".description").addClass("white-text");
     } else if (currentHour < timeDiv) {
       $(this).removeClass("present");
       $(this).addClass("future");

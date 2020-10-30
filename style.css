@@ -36,6 +36,7 @@ textarea {
 
 .description {
   white-space: pre-wrap;
+  font-weight: 600;
 }
 
 .time-block {
@@ -51,7 +52,7 @@ textarea {
 .hour {
   background-color: #ffeaa7;
   color: rgb(82, 82, 82);
-  padding-top: 30px;
+  padding-top: 27px;
   padding-left: 10px;
   font-size: 25px;
   font-weight: 500;
@@ -66,13 +67,11 @@ textarea {
 .present {
   background-color: #d63031;
   border-radius: 15px;
-  color: white;
 }
 
 .future {
   background-color: #55efc4;
   border-radius: 15px;
-  color: white;
 }
 
 .saveBtn {
@@ -88,3 +87,6 @@ textarea {
   transition: all 0.2s ease-in-out;
 }
 
+.white-text {
+  color: white;
+}
