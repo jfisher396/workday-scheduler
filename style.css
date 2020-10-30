@@ -1,10 +1,10 @@
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 16px;
   line-height: 1;
 }
 
-textarea{
+textarea {
   background: transparent;
   border: none;
   resize: none;
@@ -15,44 +15,35 @@ textarea{
 
 .jumbotron {
   text-align: center;
-  color: whitesmoke;
+  color: white;
   border-radius: 0;
   border-bottom: 10px solid black;
 }
 
 .jumbotron-pattern {
-  background-color: #026873;
-  background-image: linear-gradient(90deg, rgba(255, 255, 255, .07) 50%, transparent 50%),
-  linear-gradient(90deg, rgba(255, 255, 255, .13) 50%, transparent 50%),
-  linear-gradient(90deg, transparent 50%, rgba(255, 255, 255, .17) 50%),
-  linear-gradient(90deg, transparent 50%, rgba(255, 255, 255, .19) 50%);
-  background-size: 13px,
-  29px,
-  37px,
-  53px;
+  background-color: #a29bfe;
+  
 }
 /* #currentDay {
 
   tex
 } */
 #clearFieldsBtn {
-
   margin-top: 30px;
 }
 
-
-.description{
+.description {
   white-space: pre-wrap;
 }
 
-.time-block{
+.time-block {
   text-align: center;
 }
 
 .row {
   white-space: pre-wrap;
   height: 80px;
-  border-top: 1px solid white;;
+  border-top: 1px solid white;
 }
 
 .hour {
@@ -62,19 +53,19 @@ textarea{
 }
 
 .past {
-  background-color: #d3d3d3;
+  background-color:#dfe6e9;
   border-radius: 15px;
   color: white;
 }
 
 .present {
-  background-color: #ff6961;
+  background-color: #d63031;
   border-radius: 15px;
   color: white;
 }
 
 .future {
-  background-color: #77dd77;
+  background-color: #55efc4;
   border-radius: 15px;
   color: white;
 }
@@ -83,11 +74,11 @@ textarea{
   border-left: 1px solid black;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  background-color: #06AED5;
+  background-color:#0984e3;
   color: white;
 }
 
 .saveBtn i:hover {
   font-size: 30px;
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
