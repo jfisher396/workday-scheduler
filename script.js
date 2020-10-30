@@ -4,38 +4,19 @@ $(document).ready(function () {
   let displayDate = document.getElementById("currentDay");
   displayDate.innerHTML = NowMoment;
   let currentHour = moment().format("HH");
-  //variables
-  let nine = $("#9").text();
-  let ten = $("#10").text();
-  let eleven = $("#11").text();
-  let twelve = $("#12").text();
-  let thirteen = $("#13").text();
-  let fourteen = $("#14").text();
-  let fifteen = $("#15").text();
-  let sixteen = $("#16").text();
-  let seventeen = $("#17").text();
-  //variables to compare times from scheduler with actual time
-  let intFromNine = parseInt(nine);
-  let intFromTen = parseInt(ten);
-  let intFromEleven = parseInt(eleven);
-  let intFromTewelve = parseInt(twelve);
-  let intFromThirteen = parseInt(thirteen) + 12;
-  let intFromFourteen = parseInt(fourteen) + 12;
-  let intFromFifteen = parseInt(fifteen) + 12;
-  let intFromSixteen = parseInt(sixteen) + 12;
-  let intFromSeventeen = parseInt(seventeen) + 12;
 
-  // Button funcition to clear local storage and clear contents
+  // Button function to clear local storage and clear contents
   $("#clearFieldsBtn").click(function (event) {
     event.preventDefault;
     $("textarea").val("");
     localStorage.clear();
   });
 
+  //grabs hour from each time slot and compares it to actual time
   $(".time-div").each(function () {
     var timeDiv = $(this).attr("id").split("-")[1];
-    console.log(timeDiv)
-    if (currentHour === timeDiv) {
+    
+    if (currentHour == timeDiv) {
       $(this).addClass("present");
     } else if (currentHour < timeDiv) {
       $(this).removeClass("present");
@@ -46,6 +27,7 @@ $(document).ready(function () {
     }
   });
 
+  //grabs values from time and value divs and saves them to local storage
   $(".saveBtn").click(function (event) {
     event.preventDefault();
     var value = $(this).siblings(".time-block").val();
@@ -53,6 +35,7 @@ $(document).ready(function () {
     localStorage.setItem(time, value);
   });
 
+  //retrieves items from local storage and sets them in proper places
   $("#hour-09 .time-block").val(localStorage.getItem("09"));
   $("#hour-10 .time-block").val(localStorage.getItem("10"));
   $("#hour-11 .time-block").val(localStorage.getItem("11"));

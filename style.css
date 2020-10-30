@@ -15,9 +15,8 @@ textarea {
   color: rgb(82, 82, 82);
   border-left: 1px solid rgb(82, 82, 82);
   padding: 10px;
+  letter-spacing: 1px;
 }
-
-
 
 .jumbotron {
   max-height: 350px;
@@ -29,7 +28,6 @@ textarea {
 
 .jumbotron-pattern {
   background-color: #a29bfe;
-  
 }
 
 #clearFieldsBtn {
@@ -52,7 +50,7 @@ textarea {
 
 .hour {
   background-color: #ffffff;
-  color:rgb(82, 82, 82);
+  color: rgb(82, 82, 82);
   padding-top: 30px;
   font-size: 25px;
   font-weight: 500;
@@ -60,7 +58,7 @@ textarea {
 }
 
 .past {
-  background-color:#dfe6e9;
+  background-color: #dfe6e9;
   border-radius: 15px;
   color: white;
 }
@@ -81,7 +79,7 @@ textarea {
   border-left: 1px solid rgb(82, 82, 82);
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  background-color:#0984e3;
+  background-color: #0984e3;
   color: white;
 }
 
