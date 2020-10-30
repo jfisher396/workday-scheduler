@@ -3,9 +3,7 @@ $(document).ready(function () {
   let NowMoment = moment().format("MMMM Do YYYY");
   let displayDate = document.getElementById("currentDay");
   displayDate.innerHTML = NowMoment;
-  let currentHour = 10;
-
-//   moment().format("HH")
+  let currentHour = moment().format("HH");
 
   // Button function to clear local storage and clear contents
   $("#clearFieldsBtn").click(function (event) {
