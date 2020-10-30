@@ -36,16 +36,13 @@ $(document).ready(function () {
 
     $(".time-div").each(function () {
         var timeDiv = $(this).attr("id").split("-")[1];
-        console.log("timeDiv:", timeDiv);
+        
         if (currentHour === timeDiv) {
-            console.log("equal");
             $(this).addClass("present");
         } else if (currentHour < timeDiv) {
-            console.log("less");
             $(this).removeClass("present");
             $(this).addClass("future");
         } else if (currentHour > timeDiv) {
-            console.log("greater");
             $(this).removeClass("future");
             $(this).addClass("past");
         }
