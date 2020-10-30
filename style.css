@@ -1,5 +1,6 @@
 body {
   font-family: "Open Sans", sans-serif;
+  background-color: #dfe6e9;
   font-size: 16px;
   line-height: 1;
 }
@@ -19,19 +20,18 @@ textarea {
 }
 
 .jumbotron {
-  max-height: 350px;
+  background: linear-gradient(to right, #d63031, #6c5ce7);
   text-align: center;
   color: white;
   border-radius: 0;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  margin-bottom: 0px;
   border-bottom: 10px solid rgb(82, 82, 82);
 }
 
-.jumbotron-pattern {
-  background-color: #a29bfe;
-}
-
 #clearFieldsBtn {
-  margin-top: 30px;
+  margin-top: 10px;
 }
 
 .description {
@@ -49,12 +49,12 @@ textarea {
 }
 
 .hour {
-  background-color: #ffffff;
+  background-color: #ffeaa7;
   color: rgb(82, 82, 82);
   padding-top: 30px;
+  padding-left: 10px;
   font-size: 25px;
   font-weight: 500;
-  border-top: 1px solid rgb(82, 82, 82);
 }
 
 .past {
@@ -88,7 +88,3 @@ textarea {
   transition: all 0.2s ease-in-out;
 }
 
-.time-div:last-child {
-  margin-bottom: 50px;
-  border-bottom: 1px solid #333;
-}
