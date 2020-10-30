@@ -9,4 +9,4 @@ Link to active site: https://jfisher396.github.io/workday-scheduler/
 ---
 
 ## Visuals:
-![GitHub Logo](/images/Workday%20Scheduler.png)
+![GitHub Logo](/images/workday-scheduler.png)
