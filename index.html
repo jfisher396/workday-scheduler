@@ -1,86 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Work Day Scheduler</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
-  <title>Work Day Scheduler</title>
-</head>
+  <body>
+    <header class="jumbotron">
+      <h1 class="display-3">Work Day Scheduler</h1>
+      <p id="currentDay" class="lead display-4"></p>
+      <button id="clearFieldsBtn" type="button" class="btn btn-secondary">
+        Clear Fields
+      </button>
+    </header>
 
-<body>
-  <header class="jumbotron">
-    <h1 class="display-3">Work Day Scheduler</h1>
-    <p id="currentDay" class="lead display-4"></p>
-    <button id="clearFieldsBtn" type="button" class="btn btn-secondary">Clear Fields</button>
-  </header>
+    <div class="container">
+      <div id="hour-09" class="row time-div">
+        <div class="col-md-1 hour"><span id="9">9am</span></div>
+        <textarea class="col-md-10 time-block description"></textarea>
+        <button class="col-md-1 saveBtn"><i class="fas fa-lock"></i></button>
+      </div>
 
-  <div class="container">
-    <div id="hour-09" class="row time-div">
-      <div class="col-md-1 hour"><span id="9">9am</span></div>
-      <textarea class="col-md-10 time-block description"></textarea>
-      <button class="col-md-1 saveBtn"><i class="fas fa-lock"></i></button>
+      <div id="hour-10" class="row time-div">
+        <div class="col-md-1 hour"><span id="10">10am</span></div>
+        <textarea class="col-md-10 time-block description"></textarea>
+        <button class="col-md-1 saveBtn"><i class="fas fa-lock"></i></button>
+      </div>
+
+      <div id="hour-11" class="row time-div">
+        <div class="col-md-1 hour"><span id="11">11am</span></div>
+        <textarea class="col-md-10 time-block description"></textarea>
+        <button class="col-md-1 saveBtn"><i class="fas fa-lock"></i></button>
+      </div>
+
+      <div id="hour-12" class="row time-div">
+        <div class="col-md-1 hour"><span id="12">12pm</span></div>
+        <textarea class="col-md-10 time-block description"></textarea>
+        <button class="col-md-1 saveBtn"><i class="fas fa-lock"></i></button>
+      </div>
+
+      <div id="hour-13" class="row time-div">
+        <div class="col-md-1 hour"><span id="13">1pm</span></div>
+        <textarea class="col-md-10 time-block description"></textarea>
+        <button class="col-md-1 saveBtn"><i class="fas fa-lock"></i></button>
+      </div>
+
+      <div id="hour-14" class="row time-div">
+        <div class="col-md-1 hour"><span id="14">2pm</span></div>
+        <textarea class="col-md-10 time-block description"></textarea>
+        <button class="col-md-1 saveBtn"><i class="fas fa-lock"></i></button>
+      </div>
+
+      <div id="hour-15" class="row time-div">
+        <div class="col-md-1 hour"><span id="15">3pm</span></div>
+        <textarea class="col-md-10 time-block description"></textarea>
+        <button class="col-md-1 saveBtn"><i class="fas fa-lock"></i></button>
+      </div>
+
+      <div id="hour-16" class="row time-div">
+        <div class="col-md-1 hour n"><span id="16">4pm</span></div>
+        <textarea class="col-md-10 time-block description"></textarea>
+        <button class="col-md-1 saveBtn"><i class="fas fa-lock"></i></button>
+      </div>
+
+      <div id="hour-17" class="row time-div">
+        <div class="col-md-1 hour"><span id="17">5pm</span></div>
+        <textarea class="col-md-10 time-block description"></textarea>
+        <button class="col-md-1 saveBtn"><i class="fas fa-lock"></i></button>
+      </div>
     </div>
 
-    <div id="hour-10" class="row time-div">
-      <div class="col-md-1 hour"><span id="10">10am</span></div>
-      <textarea class="col-md-10 time-block description"></textarea>
-      <button class="col-md-1 saveBtn"><i class="fas fa-lock"></i></button>
-    </div>
-
-    <div id="hour-11" class="row time-div">
-      <div class="col-md-1 hour"><span id="11">11am</span></div>
-      <textarea class="col-md-10 time-block description"></textarea>
-      <button class="col-md-1 saveBtn"><i class="fas fa-lock"></i></button>
-    </div>
-
-    <div id="hour-12" class="row time-div">
-      <div class="col-md-1 hour "><span id="12">12pm</span></div>
-      <textarea class="col-md-10 time-block description"></textarea>
-      <button class="col-md-1 saveBtn"><i class="fas fa-lock"></i></button>
-    </div>
-
-    <div id="hour-13" class="row time-div">
-      <div class="col-md-1 hour "><span id="13">1pm</span></div>
-      <textarea class="col-md-10 time-block description"></textarea>
-      <button class="col-md-1 saveBtn"><i class="fas fa-lock"></i></button>
-    </div>
-
-    <div id="hour-14" class="row time-div">
-      <div class="col-md-1 hour"><span id="14">2pm</span></div>
-      <textarea class="col-md-10 time-block description"></textarea>
-      <button class="col-md-1 saveBtn"><i class="fas fa-lock"></i></button>
-    </div>
-
-    <div id="hour-15" class="row time-div">
-      <div class="col-md-1 hour "><span id="15">3pm</span></div>
-      <textarea class="col-md-10 time-block description"></textarea>
-      <button class="col-md-1 saveBtn"><i class="fas fa-lock"></i></button>
-    </div>
-
-    <div id="hour-16" class="row time-div">
-      <div class="col-md-1 hour n"><span id="16">4pm</span></div>
-      <textarea class="col-md-10 time-block description"></textarea>
-      <button class="col-md-1 saveBtn"><i class="fas fa-lock"></i></button>
-    </div>
-
-    <div id="hour-17" class="row time-div">
-      <div class="col-md-1 hour "><span id="17">5pm</span></div>
-      <textarea class="col-md-10 time-block description "></textarea>
-      <button class="col-md-1 saveBtn"><i class="fas fa-lock"></i></button>
-    </div>
-
-  </div>
-
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-  <script src="script.js"></script>
-  
-</body>
-
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="script.js"></script>
+  </body>
 </html>
